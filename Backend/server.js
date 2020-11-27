@@ -42,9 +42,9 @@ mongoose.connect(connection_url,{
 
 
 
-  pusher.trigger("messages", "inserted", {
-    message: "hello world"
-  });
+//   pusher.trigger("messages", "inserted", {
+//     message: "hello world"
+//   });
 
 
   const db=mongoose.connection;
@@ -65,6 +65,7 @@ mongoose.connect(connection_url,{
                   name:messageDetails.user,
                   message:messageDetails.message,
                   timestamp:messageDetails.timestamp,
+                  received:messageDetails,
               }
               )
           }else{
@@ -75,7 +76,7 @@ mongoose.connect(connection_url,{
 //routes
 app.get("/",(req,res)=>res.status(200).send("hello world"))
 
-app.get('messages/sync',(req,res)=>{
+app.get('/messages/sync',(req,res)=>{
     Messages.find((err,data)=>{
         if(err){
             res.status(500).send(err)
