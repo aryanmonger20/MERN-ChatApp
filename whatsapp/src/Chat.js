@@ -8,7 +8,7 @@ import MicIcon from '@material-ui/icons/Mic';
 
 
 
-function Chat() {
+function Chat({messages}) {
     return (
         <div className="chat">
            <div className="chat_header">
@@ -30,20 +30,23 @@ function Chat() {
                </div>
            </div>
            <div className="chat_body">
-              <p className="chat_message">
+               {messages.map((message)=>(
+                        <p className={`chat_message ${message.recieved && "chat_reciever"}`}>
+                        <span className="chat_name">{message.name} </span>
+                        {message.message}
+                        <span className="chat_timestamp">
+                            {new Date().toUTCString()}
+                        </span>
+                        </p> 
+               ))}
+             
+              {/* <p className="chat_message chat_reciever">
                   <span className="chat_name">Aryan </span>
                   This is a message
                   <span className="chat_timestamp">
                       {new Date().toUTCString()}
                   </span>
-              </p> 
-              <p className="chat_message chat_reciever">
-                  <span className="chat_name">Aryan </span>
-                  This is a message
-                  <span className="chat_timestamp">
-                      {new Date().toUTCString()}
-                  </span>
-              </p> 
+              </p>  */}
 
            </div>
            <div className="chat_footer">
