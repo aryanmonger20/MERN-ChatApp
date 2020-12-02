@@ -19,7 +19,7 @@ app.use(bodyParser.json())
  app.use(cors());
 
 //dbconfig
-const connection_url="mongodb+srv://aryan:mohit2009@cluster0.mduhl.mongodb.net/chatapp?retryWrites=true&w=majority";
+const connection_url="";
 mongoose.connect(connection_url,{
     useCreateIndex:true,
     useNewUrlParser:true,
