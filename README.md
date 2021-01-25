@@ -11,7 +11,7 @@ __________________________________________
 
 
 <p align="center">
- <img src="public/assets/readme/screen1.png" alt="ui_start"/>
+ <img src="whatsapp.jpeg" alt="ui_start"/>
 </p>
 
 
@@ -21,9 +21,9 @@ In order to work and run the project locally you need NodeJs and npm installed o
 Perform the following steps:
 
 ```
- $ git clone https://github.com/aryanmonger20/WeatherApp.git
+ $ git clone https://github.com/aryanmonger20/MERN-Whatsapp-clone
 
- $ cd WeatherApp
+ $ cd whatsapp
 
  $ npm install
 
