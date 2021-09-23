@@ -19,7 +19,7 @@ app.use(bodyParser.json())
  app.use(cors());
 
 //dbconfig
-const connection_url="";
+const connection_url="mongodb+srv://aryan:mohit2009@cluster0.mduhl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 mongoose.connect(connection_url,{
     useCreateIndex:true,
     useNewUrlParser:true,

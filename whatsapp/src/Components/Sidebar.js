@@ -2,7 +2,6 @@ import React from 'react'
 
 import "./Sidebar.css"
 
-import SearchIcon from '@material-ui/icons/Search';
 import DonutLargeIcon from '@material-ui/icons/DonutLarge';
 import {Avatar,IconButton} from '@material-ui/core'
 import ChatIcon from '@material-ui/icons/Chat';

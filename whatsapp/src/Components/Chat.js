@@ -4,7 +4,7 @@ import {Avatar,IconButton} from '@material-ui/core'
 import { AttachFile, MoreVert ,SearchOutlined} from '@material-ui/icons'
 import InsertEmoticonIcon from "@material-ui/icons/InsertEmoticon"
 import MicIcon from '@material-ui/icons/Mic';
-import axious from "./axios";
+import axious from "../axios";
 
 
 
@@ -54,13 +54,13 @@ function Chat({messages}) {
                         </p> 
                ))}
              
-              {/* <p className="chat_message chat_reciever">
+              <p className="chat_message chat_reciever">
                   <span className="chat_name">Aryan </span>
                   This is a message
                   <span className="chat_timestamp">
                       {new Date().toUTCString()}
                   </span>
-              </p>  */}
+              </p> 
 
            </div>
            <div className="chat_footer">
